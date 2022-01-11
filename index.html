@@ -1,0 +1,1166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./base.css">
+    <link rel="stylesheet" href="assets/font/fontawesome-free-5.15.4-web/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="./assets/js/jquery-3.6.0.min.js"></script>
+    <!-- <script src="./assets/js/main.js"></script> -->
+</head>
+<body>
+    <!-- app -->
+    <div class="app">
+        <!-- scroll2top button -->
+        <button href="javascript:;" class="button-scroll2top" id="button-scroll2top" onclick="scroll2top()">
+            <i class="fa fa-chevron-up"></i>
+        </button>
+        <script type="text/javascript">
+            $(window).scroll(function() {
+                if($(window).scrollTop() >= 500) {
+                    $(".button-scroll2top").show();
+                }
+                else {
+                    $(".button-scroll2top").hide();
+                }
+            });
+            
+            function scroll2top() {
+                $("html,body").animate({scrollTop: 0}, 'fast');
+            }
+        </script> 
+
+        <!-- header -->
+        <header class="header">
+            <div class="header__banner">
+                <!-- navbar -->
+                <div class="header__banner-navbar">
+                    <ul class="navbar-list">
+                        <li class="list-item list-item-1">
+                            <div class="item">
+                                <a href="./index.html" class="item-link">
+                                    <img src="./assets/img/Premier_League_Logo_w.png" alt="" class="item-link-img">
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <ul class="navbar-list">
+                        <li class="list-item list-item-2"><div class="item"><a href="./index.html" class="item-link">Home</a></div></li>
+                        <li class="list-item list-item-2"><div class="item"><a href="#intro" class="item-link-1">Introduce</a></div></li>
+                        <li class="list-item list-item-2"><div class="item"><a href="#clubs" class="item-link-1">Clubs</a></div></li>             
+                    </ul>
+                </div>
+
+                <!-- header title -->
+                <div class="header__banner-box">
+                    <div class="header__banner-box-title">
+                        <h1 class="banner-title">The English Premier League</h1>
+                        <h2 class="banner-year">2021-2022</h2>
+                        <h3 class="banner-contain">The Premier League, often referred to as the English Premier League or the EPL (legal name: The Football Association Premier League Limited), is the top level of the English football league system. Contested by 20 clubs, it operates on a system of promotion and relegation with the English Football League ... </h3>
+                        <div class="banner-btn">
+                            <button class="banner-button">
+                                <a href="#intro" class="button-word-link">Learn more</a>
+                                <i class="fas fa-angle-right button-angle"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="header__banner-box-btn"></div>
+                </div>
+            </div>
+        </header>
+
+        <!-- container -->
+        <div class="container">     
+            <!-- intro -->
+            <div class="container__introduce" id="intro">
+                <div class="container__introduce-box">
+                    <div class="introduce-box-ct-1">
+                        <div class="ct-heading">
+                            <p class="ct-heading-word">1. Introduce</p>
+                        </div>
+                        <div class="ct-body">
+                            <p class="ct-body-word">
+                                The Premier League, often referred to as the English Premier League or the EPL (legal name: The Football Association Premier League Limited), is the top level of the English football league system. Contested by 20 clubs, it operates on a system of promotion and relegation with the English Football League (EFL). Seasons run from August to May with each team playing 38 matches (playing all 19 other teams both home and away). Most games are played on Saturday and Sunday afternoons. The competition was founded as the FA Premier League on 20 February 1992 following the decision of clubs in the Football League First Division to break away from the Football League, founded in 1888.
+                            </p>
+                            <p class="ct-body-word">
+                                There are 20 clubs in the Premier League. During the course of a season (from August to May) each club plays the others twice (a double round-robin system), once at their home stadium and once at that of their opponents', for 38 games. Teams receive three points for a win and one point for a draw. No points are awarded for a loss. Teams are ranked by total points, then goal difference, and then goals scored. If still equal, teams are deemed to occupy the same position. If there is a tie for the championship, for relegation, or for qualification to other competitions, a play-off match at a neutral venue decides rank.
+                            </p>
+                            <p class="ct-body-word">
+                                A system of promotion and relegation exists between the Premier League and the EFL Championship. The three lowest placed teams in the Premier League are relegated to the Championship, and the top two teams from the Championship promoted to the Premier League, with an additional team promoted after a series of play-offs involving the third, fourth, fifth and sixth placed clubs.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="introduce-box-ct-2">
+                        <div class="ct-img">
+                            <img src="./assets/img/trophy2.png" alt="" class="ct-img-img">
+                        </div>
+                        <div class="ct-explain">
+                            <p class="ct-explain-word">EPL's trophy</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- list -->
+            <div class="container__list" id="clubs">
+                <div class="container__list-cover">
+                    <div class="list-cover-1">
+                        <div class="list-cover-word">
+                            <p class="list-cover-word-box">2. Clubs</p>
+                        </div>                       
+                    </div>
+                    <div class="list-cover-2">
+                        <ul class="container__list-box">
+                            <!-- mc -->
+                            <li class="container__item">
+                                <button class="container__item-btn"> 
+                                    <div class="container__item-name">
+                                        <h3 class="item-name">Manchester City</h3>
+                                    </div>                          
+                                    <div class="container__item-btn-img">
+                                        <img src="./assets/img/manc.png" alt="" class="item-btn-img">
+                                    </div>                     
+                                    <div class="container__item-btn-info">
+                                        <div class="info-category">
+                                            <div class="info-word">
+                                                <span class="info-word-eva info-word-eva-1">Evaluate: </span>
+                                            </div>
+                        
+                                            <div class="info-word">
+                                                <span class="info-word-eva info-word-eva-2">EPL trophy: </span>
+                                            </div>
+                        
+                                            <div class="info-word">
+                                                <span class="info-word-eva info-word-eva-3">FA cup: </span>
+                                            </div>
+                                        </div>
+                        
+                                        <div class="info-category">
+                                            <div class="info-icon">
+                                                <span class="info-star">
+                                                    <i class="fas fa-star info-eva-star"></i>
+                                                    <i class="fas fa-star info-eva-star"></i>
+                                                    <i class="fas fa-star info-eva-star"></i>
+                                                    <i class="fas fa-star info-eva-star"></i>
+                                                    <i class="fas fa-star info-eva-star"></i>
+                                                </span>
+                                            </div>
+                        
+                                            <div class="info-icon">
+                                                <span class="info-trophy">
+                                                    <i class="fas fa-trophy info-eva-trophy"></i>
+                                                    <span class="info-trophy-word">x 7</span>
+                                                </span>
+                                            </div>                        
+                                            <div class="info-icon">
+                                                <span class="info-trophy">
+                                                    <i class="fas fa-trophy info-eva-trophy"></i>
+                                                    <span class="info-trophy-word">x 6</span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                </button>
+                            </li>
+                        
+                            <!-- mu -->
+                            <li class="container__item">
+                                <button class="container__item-btn" id="mu">
+                                    <div class="container__item-name">
+                                        <h3 class="item-name">Manchester United</h3>
+                                    </div>  
+                                    <div class="container__item-btn-img">
+                                        <img src="./assets/img/manu.png" alt="" class="item-btn-img">
+                                    </div>                     
+                                    <div class="container__item-btn-info">
+                                        <div class="info-category">
+                                            <div class="info-word">
+                                                <span class="info-word-eva info-word-eva-1">Evaluate: </span>
+                                            </div>
+                        
+                                            <div class="info-word">
+                                                <span class="info-word-eva info-word-eva-2">EPL trophy: </span>
+                                            </div>
+                        
+                                            <div class="info-word">
+                                                <span class="info-word-eva info-word-eva-3">FA cup: </span>
+                                            </div>
+                                        </div>
+                        
+                                        <div class="info-category">
+                                            <div class="info-icon">
+                                                <span class="info-star">
+                                                    <i class="fas fa-star info-eva-star"></i>
+                                                    <i class="fas fa-star info-eva-star"></i>
+                                                    <i class="fas fa-star info-eva-star"></i>
+                                                    <i class="fas fa-star info-eva-star"></i>
+                                                    <i class="fas fa-star info-eva-star"></i>
+                                                </span>
+                                            </div>
+                        
+                                            <div class="info-icon">
+                                                <span class="info-trophy">
+                                                    <i class="fas fa-trophy info-eva-trophy"></i>
+                                                    <span class="info-trophy-word">x 20</span>
+                                                </span>
+                                            </div>
+                        
+                                            <div class="info-icon">
+                                                <span class="info-trophy">
+                                                    <i class="fas fa-trophy info-eva-trophy"></i>
+                                                    <span class="info-trophy-word">x 12</span>
+                                                </span>
+                                            </div>
+                                        </div>                                        
+                                    </div>
+                                </button>
+                            </li>
+                        
+                            <!-- chelsea -->
+                            <li class="container__item">
+                                <button class="container__item-btn">
+                                    <div class="container__item-name">
+                                        <h3 class="item-name">Chelsea</h3>
+                                    </div>  
+                                    <div class="container__item-btn-img">
+                                        <img src="./assets/img/chelsea.png" alt="" class="item-btn-img">
+                                    </div>                     
+                                    <div class="container__item-btn-info">
+                                        <div class="info-category">
+                                            <div class="info-word">
+                                                <span class="info-word-eva info-word-eva-1">Evaluate: </span>
+                                            </div>
+                        
+                                            <div class="info-word">
+                                                <span class="info-word-eva info-word-eva-2">EPL trophy: </span>
+                                            </div>
+                        
+                                            <div class="info-word">
+                                                <span class="info-word-eva info-word-eva-3">FA cup: </span>
+                                            </div>
+                                        </div>
+                        
+                                        <div class="info-category">
+                                            <div class="info-icon">
+                                                <span class="info-star">
+                                                    <i class="fas fa-star info-eva-star"></i>
+                                                    <i class="fas fa-star info-eva-star"></i>
+                                                    <i class="fas fa-star info-eva-star"></i>
+                                                    <i class="fas fa-star info-eva-star"></i>
+                                                    <i class="fas fa-star info-eva-star"></i>
+                                                </span>
+                                            </div>
+                        
+                                            <div class="info-icon">
+                                                <span class="info-trophy">
+                                                    <i class="fas fa-trophy info-eva-trophy"></i>
+                                                    <span class="info-trophy-word">x 6</span>
+                                                </span>
+                                            </div>
+                        
+                                            <div class="info-icon">
+                                                <span class="info-trophy">
+                                                    <i class="fas fa-trophy info-eva-trophy"></i>
+                                                    <span class="info-trophy-word">x 8</span>
+                                                </span>
+                                            </div>
+                                        </div>                                        
+                                    </div>
+                                </button>
+                            </li>
+                        
+                            <!-- liverpool -->
+                            <li class="container__item">
+                                <button class="container__item-btn">
+                                    <div class="container__item-name">
+                                        <h3 class="item-name">Liverpool</h3>
+                                    </div>
+                                    <div class="container__item-btn-img">
+                                        <img src="./assets/img/liverpool.png" alt="" class="item-btn-img">
+                                    </div>                     
+                                    <div class="container__item-btn-info">
+                                        <div class="info-category">
+                                            <div class="info-word">
+                                                <span class="info-word-eva info-word-eva-1">Evaluate: </span>
+                                            </div>
+                        
+                                            <div class="info-word">
+                                                <span class="info-word-eva info-word-eva-2">EPL trophy: </span>
+                                            </div>
+                        
+                                            <div class="info-word">
+                                                <span class="info-word-eva info-word-eva-3">FA cup: </span>
+                                            </div>
+                                        </div>
+                        
+                                        <div class="info-category">
+                                            <div class="info-icon">
+                                                <span class="info-star">
+                                                    <i class="fas fa-star info-eva-star"></i>
+                                                    <i class="fas fa-star info-eva-star"></i>
+                                                    <i class="fas fa-star info-eva-star"></i>
+                                                    <i class="fas fa-star info-eva-star"></i>
+                                                    <i class="fas fa-star info-eva-star"></i>
+                                                </span>
+                                            </div>
+                        
+                                            <div class="info-icon">
+                                                <span class="info-trophy">
+                                                    <i class="fas fa-trophy info-eva-trophy"></i>
+                                                    <span class="info-trophy-word">x 19</span>
+                                                </span>
+                                            </div>
+                        
+                                            <div class="info-icon">
+                                                <span class="info-trophy">
+                                                    <i class="fas fa-trophy info-eva-trophy"></i>
+                                                    <span class="info-trophy-word">x 7</span>
+                                                </span>
+                                            </div>
+                                        </div>                                        
+                                    </div>
+                                </button>
+                            </li>
+                        
+                            <!-- west ham -->
+                            <li class="container__item">
+                                <button class="container__item-btn">
+                                    <div class="container__item-name">
+                                        <h3 class="item-name">West Ham</h3>
+                                    </div>
+                                    <div class="container__item-btn-img">
+                                        <img src="./assets/img/WestHam.png" alt="" class="item-btn-img">
+                                    </div>                     
+                                    <div class="container__item-btn-info">
+                                        <div class="info-category">
+                                            <div class="info-word">
+                                                <span class="info-word-eva info-word-eva-1">Evaluate: </span>
+                                            </div>
+                        
+                                            <div class="info-word">
+                                                <span class="info-word-eva info-word-eva-2">EPL trophy: </span>
+                                            </div>
+                        
+                                            <div class="info-word">
+                                                <span class="info-word-eva info-word-eva-3">FA cup: </span>
+                                            </div>
+                                        </div>
+                        
+                                        <div class="info-category">
+                                            <div class="info-icon">
+                                                <span class="info-star">
+                                                    <i class="fas fa-star info-eva-star"></i>
+                                                    <i class="fas fa-star info-eva-star"></i>
+                                                    <i class="fas fa-star info-eva-star"></i>
+                                                </span>
+                                            </div>
+                        
+                                            <div class="info-icon">
+                                                <span class="info-trophy">
+                                                    <i class="fas fa-trophy info-eva-trophy"></i>
+                                                    <span class="info-trophy-word">x 0</span>
+                                                </span>
+                                            </div>
+                        
+                                            <div class="info-icon">
+                                                <span class="info-trophy">
+                                                    <i class="fas fa-trophy info-eva-trophy"></i>
+                                                    <span class="info-trophy-word">x 3</span>
+                                                </span>
+                                            </div>
+                                        </div>                                        
+                                    </div>
+                                </button>
+                            </li>
+                        
+                            <!-- ars -->
+                            <li class="container__item">
+                                <button class="container__item-btn">
+                                    <div class="container__item-name">
+                                        <h3 class="item-name">Arsenal</h3>
+                                    </div>
+                                    <div class="container__item-btn-img">
+                                        <img src="./assets/img/ars.png" alt="" class="item-btn-img">
+                                    </div>                     
+                                    <div class="container__item-btn-info">
+                                        <div class="info-category">
+                                            <div class="info-word">
+                                                <span class="info-word-eva info-word-eva-1">Evaluate: </span>
+                                            </div>
+                        
+                                            <div class="info-word">
+                                                <span class="info-word-eva info-word-eva-2">EPL trophy: </span>
+                                            </div>
+                        
+                                            <div class="info-word">
+                                                <span class="info-word-eva info-word-eva-3">FA cup: </span>
+                                            </div>
+                                        </div>
+                        
+                                        <div class="info-category">
+                                            <div class="info-icon">
+                                                <span class="info-star">
+                                                    <i class="fas fa-star info-eva-star"></i>
+                                                    <i class="fas fa-star info-eva-star"></i>
+                                                    <i class="fas fa-star info-eva-star"></i>
+                                                    <i class="fas fa-star info-eva-star"></i>
+                                                    <i class="fas fa-star info-eva-star"></i>
+                                                </span>
+                                            </div>
+                        
+                                            <div class="info-icon">
+                                                <span class="info-trophy">
+                                                    <i class="fas fa-trophy info-eva-trophy"></i>
+                                                    <span class="info-trophy-word">x 13</span>
+                                                </span>
+                                            </div>
+                        
+                                            <div class="info-icon">
+                                                <span class="info-trophy">
+                                                    <i class="fas fa-trophy info-eva-trophy"></i>
+                                                    <span class="info-trophy-word">x 14</span>
+                                                </span>
+                                            </div>
+                                        </div>                                       
+                                    </div>
+                                </button>
+                            </li>
+                        
+                            <!-- tot -->
+                            <li class="container__item">
+                                <button class="container__item-btn">
+                                    <div class="container__item-name">
+                                        <h3 class="item-name">Tottenham Hotspur</h3>
+                                    </div>
+                                    <div class="container__item-btn-img">
+                                        <img src="./assets/img/tottenham.png" alt="" class="item-btn-img">
+                                    </div>                     
+                                    <div class="container__item-btn-info">
+                                        <div class="info-category">
+                                            <div class="info-word">
+                                                <span class="info-word-eva info-word-eva-1">Evaluate: </span>
+                                            </div>
+                        
+                                            <div class="info-word">
+                                                <span class="info-word-eva info-word-eva-2">EPL trophy: </span>
+                                            </div>
+                        
+                                            <div class="info-word">
+                                                <span class="info-word-eva info-word-eva-3">FA cup: </span>
+                                            </div>
+                                        </div>
+                        
+                                        <div class="info-category">
+                                            <div class="info-icon">
+                                                <span class="info-star">
+                                                    <i class="fas fa-star info-eva-star"></i>
+                                                    <i class="fas fa-star info-eva-star"></i>
+                                                    <i class="fas fa-star info-eva-star"></i>
+                                                    <i class="fas fa-star info-eva-star"></i>
+                                                </span>
+                                            </div>
+                        
+                                            <div class="info-icon">
+                                                <span class="info-trophy">
+                                                    <i class="fas fa-trophy info-eva-trophy"></i>
+                                                    <span class="info-trophy-word">x 2</span>
+                                                </span>
+                                            </div>
+                        
+                                            <div class="info-icon">
+                                                <span class="info-trophy">
+                                                    <i class="fas fa-trophy info-eva-trophy"></i>
+                                                    <span class="info-trophy-word">x 8</span>
+                                                </span>
+                                            </div>
+                                        </div>                                       
+                                    </div>
+                                </button>
+                            </li>
+                        
+                            <!-- leicester -->
+                            <li class="container__item">
+                                <button class="container__item-btn">
+                                    <div class="container__item-name">
+                                        <h3 class="item-name">Leicester City</h3>
+                                    </div>
+                                    <div class="container__item-btn-img">
+                                        <img src="./assets/img/leicester.png" alt="" class="item-btn-img">
+                                    </div>                     
+                                    <div class="container__item-btn-info">
+                                        <div class="info-category">
+                                            <div class="info-word">
+                                                <span class="info-word-eva info-word-eva-1">Evaluate: </span>
+                                            </div>
+                        
+                                            <div class="info-word">
+                                                <span class="info-word-eva info-word-eva-2">EPL trophy: </span>
+                                            </div>
+                        
+                                            <div class="info-word">
+                                                <span class="info-word-eva info-word-eva-3">FA cup: </span>
+                                            </div>
+                                        </div>
+                        
+                                        <div class="info-category">
+                                            <div class="info-icon">
+                                                <span class="info-star">
+                                                    <i class="fas fa-star info-eva-star"></i>
+                                                    <i class="fas fa-star info-eva-star"></i>
+                                                    <i class="fas fa-star info-eva-star"></i>
+                                                    <i class="fas fa-star info-eva-star"></i>
+                                                </span>
+                                            </div>
+                        
+                                            <div class="info-icon">
+                                                <span class="info-trophy">
+                                                    <i class="fas fa-trophy info-eva-trophy"></i>
+                                                    <span class="info-trophy-word">x 1</span>
+                                                </span>
+                                            </div>
+                        
+                                            <div class="info-icon">
+                                                <span class="info-trophy">
+                                                    <i class="fas fa-trophy info-eva-trophy"></i>
+                                                    <span class="info-trophy-word">x 1</span>
+                                                </span>
+                                            </div>
+                                        </div>                                        
+                                    </div>
+                                </button>
+                            </li>
+                        
+                            <!-- wolves -->
+                            <li class="container__item">
+                                <button class="container__item-btn">
+                                    <div class="container__item-name">
+                                        <h3 class="item-name">Wolvehampton Wanderers</h3>
+                                    </div>
+                                    <div class="container__item-btn-img">
+                                        <img src="./assets/img/wolves.png" alt="" class="item-btn-img">
+                                    </div>                     
+                                    <div class="container__item-btn-info">
+                                        <div class="info-category">
+                                            <div class="info-word">
+                                                <span class="info-word-eva info-word-eva-1">Evaluate: </span>
+                                            </div>
+                        
+                                            <div class="info-word">
+                                                <span class="info-word-eva info-word-eva-2">EPL trophy: </span>
+                                            </div>
+                        
+                                            <div class="info-word">
+                                                <span class="info-word-eva info-word-eva-3">FA cup: </span>
+                                            </div>
+                                        </div>
+                        
+                                        <div class="info-category">
+                                            <div class="info-icon">
+                                                <span class="info-star">
+                                                    <i class="fas fa-star info-eva-star"></i>
+                                                    <i class="fas fa-star info-eva-star"></i>
+                                                    <i class="fas fa-star info-eva-star"></i>
+                                                    <i class="fas fa-star info-eva-star"></i>
+                                                </span>
+                                            </div>
+                        
+                                            <div class="info-icon">
+                                                <span class="info-trophy">
+                                                    <i class="fas fa-trophy info-eva-trophy"></i>
+                                                    <span class="info-trophy-word">x 3</span>
+                                                </span>
+                                            </div>
+                        
+                                            <div class="info-icon">
+                                                <span class="info-trophy">
+                                                    <i class="fas fa-trophy info-eva-trophy"></i>
+                                                    <span class="info-trophy-word">x 4</span>
+                                                </span>
+                                            </div>
+                                        </div>                                        
+                                    </div>
+                                </button>
+                            </li>
+                        
+                            <!-- brentford -->
+                            <li class="container__item">
+                                <button class="container__item-btn">
+                                    <div class="container__item-name">
+                                        <h3 class="item-name">Brentford</h3>
+                                    </div>
+                                    <div class="container__item-btn-img">
+                                        <img src="./assets/img/brentford.png" alt="" class="item-btn-img">
+                                    </div>                     
+                                    <div class="container__item-btn-info">
+                                        <div class="info-category">
+                                            <div class="info-word">
+                                                <span class="info-word-eva info-word-eva-1">Evaluate: </span>
+                                            </div>
+                        
+                                            <div class="info-word">
+                                                <span class="info-word-eva info-word-eva-2">EPL trophy: </span>
+                                            </div>
+                        
+                                            <div class="info-word">
+                                                <span class="info-word-eva info-word-eva-3">FA cup: </span>
+                                            </div>
+                                        </div>
+                        
+                                        <div class="info-category">
+                                            <div class="info-icon">
+                                                <span class="info-star">
+                                                    <i class="fas fa-star info-eva-star"></i>
+                                                    <i class="fas fa-star info-eva-star"></i>
+                                                </span>
+                                            </div>
+                        
+                                            <div class="info-icon">
+                                                <span class="info-trophy">
+                                                    <i class="fas fa-trophy info-eva-trophy"></i>
+                                                    <span class="info-trophy-word">x 1</span>
+                                                </span>
+                                            </div>
+                        
+                                            <div class="info-icon">
+                                                <span class="info-trophy">
+                                                    <i class="fas fa-trophy info-eva-trophy"></i>
+                                                    <span class="info-trophy-word">x 0</span>
+                                                </span>
+                                            </div>
+                                        </div>                                        
+                                    </div>
+                                </button>
+                            </li>
+                            
+                            <!-- brighton -->
+                            <li class="container__item">
+                                <button class="container__item-btn">
+                                    <div class="container__item-name">
+                                        <h3 class="item-name">Brighton</h3>
+                                    </div>
+                                    <div class="container__item-btn-img">
+                                        <img src="./assets/img/Brighton.png" alt="" class="item-btn-img">
+                                    </div>                     
+                                    <div class="container__item-btn-info">
+                                        <div class="info-category">
+                                            <div class="info-word">
+                                                <span class="info-word-eva info-word-eva-1">Evaluate: </span>
+                                            </div>
+                        
+                                            <div class="info-word">
+                                                <span class="info-word-eva info-word-eva-2">EPL trophy: </span>
+                                            </div>
+                        
+                                            <div class="info-word">
+                                                <span class="info-word-eva info-word-eva-3">FA cup: </span>
+                                            </div>
+                                        </div>
+                        
+                                        <div class="info-category">
+                                            <div class="info-icon">
+                                                <span class="info-star">
+                                                    <i class="fas fa-star info-eva-star"></i>
+                                                    <i class="fas fa-star info-eva-star"></i>                             
+                                                </span>
+                                            </div>
+                        
+                                            <div class="info-icon">
+                                                <span class="info-trophy">
+                                                    <i class="fas fa-trophy info-eva-trophy"></i>
+                                                    <span class="info-trophy-word">x 0</span>
+                                                </span>
+                                            </div>
+                        
+                                            <div class="info-icon">
+                                                <span class="info-trophy">
+                                                    <i class="fas fa-trophy info-eva-trophy"></i>
+                                                    <span class="info-trophy-word">x 0</span>
+                                                </span>
+                                            </div>
+                                        </div>                                        
+                                    </div>
+                                </button>
+                            </li>
+                        
+                            <!-- crystal -->
+                            <li class="container__item">
+                                <button class="container__item-btn">
+                                    <div class="container__item-name">
+                                        <h3 class="item-name">Crystal Palace</h3>
+                                    </div>
+                                    <div class="container__item-btn-img">
+                                        <img src="./assets/img/Crystal.png" alt="" class="item-btn-img">
+                                    </div>                     
+                                    <div class="container__item-btn-info">
+                                        <div class="info-category">
+                                            <div class="info-word">
+                                                <span class="info-word-eva info-word-eva-1">Evaluate: </span>
+                                            </div>
+                        
+                                            <div class="info-word">
+                                                <span class="info-word-eva info-word-eva-2">EPL trophy: </span>
+                                            </div>
+                        
+                                            <div class="info-word">
+                                                <span class="info-word-eva info-word-eva-3">FA cup: </span>
+                                            </div>
+                                        </div>
+                        
+                                        <div class="info-category">
+                                            <div class="info-icon">
+                                                <span class="info-star">
+                                                    <i class="fas fa-star info-eva-star"></i>
+                                                    <i class="fas fa-star info-eva-star"></i>
+                                                    <i class="fas fa-star info-eva-star"></i>
+                                                </span>
+                                            </div>
+                        
+                                            <div class="info-icon">
+                                                <span class="info-trophy">
+                                                    <i class="fas fa-trophy info-eva-trophy"></i>
+                                                    <span class="info-trophy-word">x 0</span>
+                                                </span>
+                                            </div>
+                        
+                                            <div class="info-icon">
+                                                <span class="info-trophy">
+                                                    <i class="fas fa-trophy info-eva-trophy"></i>
+                                                    <span class="info-trophy-word">x 0</span>
+                                                </span>
+                                            </div>
+                                        </div>                                        
+                                    </div>
+                                </button>
+                            </li>
+                        
+                            <!-- aston villa -->
+                            <li class="container__item">
+                                <button class="container__item-btn">
+                                    <div class="container__item-name">
+                                        <h3 class="item-name">Aston Villa</h3>
+                                    </div>
+                                    <div class="container__item-btn-img">
+                                        <img src="./assets/img/AstonVilla.png" alt="" class="item-btn-img">
+                                    </div>                     
+                                    <div class="container__item-btn-info">
+                                        <div class="info-category">
+                                            <div class="info-word">
+                                                <span class="info-word-eva info-word-eva-1">Evaluate: </span>
+                                            </div>
+                        
+                                            <div class="info-word">
+                                                <span class="info-word-eva info-word-eva-2">EPL trophy: </span>
+                                            </div>
+                        
+                                            <div class="info-word">
+                                                <span class="info-word-eva info-word-eva-3">FA cup: </span>
+                                            </div>
+                                        </div>
+                        
+                                        <div class="info-category">
+                                            <div class="info-icon">
+                                                <span class="info-star">
+                                                    <i class="fas fa-star info-eva-star"></i>
+                                                    <i class="fas fa-star info-eva-star"></i>
+                                                    <i class="fas fa-star info-eva-star"></i>
+                                                    <i class="fas fa-star info-eva-star"></i>
+                                                </span>
+                                            </div>
+                        
+                                            <div class="info-icon">
+                                                <span class="info-trophy">
+                                                    <i class="fas fa-trophy info-eva-trophy"></i>
+                                                    <span class="info-trophy-word">x 7</span>
+                                                </span>
+                                            </div>
+                        
+                                            <div class="info-icon">
+                                                <span class="info-trophy">
+                                                    <i class="fas fa-trophy info-eva-trophy"></i>
+                                                    <span class="info-trophy-word">x 7</span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                </button>
+                            </li>                        
+                            <!-- everton -->
+                            <li class="container__item">
+                                <button class="container__item-btn">
+                                    <div class="container__item-name">
+                                        <h3 class="item-name">Everton</h3>
+                                    </div>
+                                    <div class="container__item-btn-img">
+                                        <img src="./assets/img/Everton.png" alt="" class="item-btn-img">
+                                    </div>                     
+                                    <div class="container__item-btn-info">
+                                        <div class="info-category">
+                                            <div class="info-word">
+                                                <span class="info-word-eva info-word-eva-1">Evaluate: </span>
+                                            </div>
+                        
+                                            <div class="info-word">
+                                                <span class="info-word-eva info-word-eva-2">EPL trophy: </span>
+                                            </div>
+                        
+                                            <div class="info-word">
+                                                <span class="info-word-eva info-word-eva-3">FA cup: </span>
+                                            </div>
+                                        </div>
+                        
+                                        <div class="info-category">
+                                            <div class="info-icon">
+                                                <span class="info-star">
+                                                    <i class="fas fa-star info-eva-star"></i>
+                                                    <i class="fas fa-star info-eva-star"></i>
+                                                    <i class="fas fa-star info-eva-star"></i>
+                                                    <i class="fas fa-star info-eva-star"></i>
+                                                </span>
+                                            </div>
+                        
+                                            <div class="info-icon">
+                                                <span class="info-trophy">
+                                                    <i class="fas fa-trophy info-eva-trophy"></i>
+                                                    <span class="info-trophy-word">x 9</span>
+                                                </span>
+                                            </div>
+                        
+                                            <div class="info-icon">
+                                                <span class="info-trophy">
+                                                    <i class="fas fa-trophy info-eva-trophy"></i>
+                                                    <span class="info-trophy-word">x 5</span>
+                                                </span>
+                                            </div>
+                                        </div>                                        
+                                    </div>
+                                </button>
+                            </li>
+                        
+                            <!-- leeds -->
+                            <li class="container__item">
+                                <button class="container__item-btn">
+                                    <div class="container__item-name">
+                                        <h3 class="item-name">Leeds United</h3>
+                                    </div>
+                                    <div class="container__item-btn-img">
+                                        <img src="./assets/img/Leeds.png" alt="" class="item-btn-img">
+                                    </div>                     
+                                    <div class="container__item-btn-info">
+                                        <div class="info-category">
+                                            <div class="info-word">
+                                                <span class="info-word-eva info-word-eva-1">Evaluate: </span>
+                                            </div>
+                        
+                                            <div class="info-word">
+                                                <span class="info-word-eva info-word-eva-2">EPL trophy: </span>
+                                            </div>
+                        
+                                            <div class="info-word">
+                                                <span class="info-word-eva info-word-eva-3">FA cup: </span>
+                                            </div>
+                                        </div>
+                        
+                                        <div class="info-category">
+                                            <div class="info-icon">
+                                                <span class="info-star">
+                                                    <i class="fas fa-star info-eva-star"></i>
+                                                    <i class="fas fa-star info-eva-star"></i>
+                                                    <i class="fas fa-star info-eva-star"></i> 
+                                                </span>
+                                            </div>
+                        
+                                            <div class="info-icon">
+                                                <span class="info-trophy">
+                                                    <i class="fas fa-trophy info-eva-trophy"></i>
+                                                    <span class="info-trophy-word">x 3</span>
+                                                </span>
+                                            </div>
+                        
+                                            <div class="info-icon">
+                                                <span class="info-trophy">
+                                                    <i class="fas fa-trophy info-eva-trophy"></i>
+                                                    <span class="info-trophy-word">x 1</span>
+                                                </span>
+                                            </div>
+                                        </div>                                        
+                                    </div>
+                                </button>
+                            </li>
+                        
+                            <!-- southampton -->
+                            <li class="container__item">
+                                <button class="container__item-btn">
+                                    <div class="container__item-name">
+                                        <h3 class="item-name">Southampton</h3>
+                                    </div>
+                                    <div class="container__item-btn-img">
+                                        <img src="./assets/img/Southampton.png" alt="" class="item-btn-img">
+                                    </div>                     
+                                    <div class="container__item-btn-info">
+                                        <div class="info-category">
+                                            <div class="info-word">
+                                                <span class="info-word-eva info-word-eva-1">Evaluate: </span>
+                                            </div>
+                        
+                                            <div class="info-word">
+                                                <span class="info-word-eva info-word-eva-2">EPL trophy: </span>
+                                            </div>
+                        
+                                            <div class="info-word">
+                                                <span class="info-word-eva info-word-eva-3">FA cup: </span>
+                                            </div>
+                                        </div>
+                        
+                                        <div class="info-category">
+                                            <div class="info-icon">
+                                                <span class="info-star">
+                                                    <i class="fas fa-star info-eva-star"></i>
+                                                    <i class="fas fa-star info-eva-star"></i>
+                                                    <i class="fas fa-star info-eva-star"></i>   
+                                                </span>
+                                            </div>
+                        
+                                            <div class="info-icon">
+                                                <span class="info-trophy">
+                                                    <i class="fas fa-trophy info-eva-trophy"></i>
+                                                    <span class="info-trophy-word">x 0</span>
+                                                </span>
+                                            </div>
+                        
+                                            <div class="info-icon">
+                                                <span class="info-trophy">
+                                                    <i class="fas fa-trophy info-eva-trophy"></i>
+                                                    <span class="info-trophy-word">x 1</span>
+                                                </span>
+                                            </div>
+                                        </div>                                        
+                                    </div>
+                                </button>
+                            </li>
+                        
+                            <!-- watford -->
+                            <li class="container__item">
+                                <button class="container__item-btn">
+                                    <div class="container__item-name">
+                                        <h3 class="item-name">Watford</h3>
+                                    </div>
+                                    <div class="container__item-btn-img">
+                                        <img src="./assets/img/Watford.png" alt="" class="item-btn-img">
+                                    </div>                     
+                                    <div class="container__item-btn-info">
+                                        <div class="info-category">
+                                            <div class="info-word">
+                                                <span class="info-word-eva info-word-eva-1">Evaluate: </span>
+                                            </div>
+                        
+                                            <div class="info-word">
+                                                <span class="info-word-eva info-word-eva-2">EPL trophy: </span>
+                                            </div>
+                        
+                                            <div class="info-word">
+                                                <span class="info-word-eva info-word-eva-3">FA cup: </span>
+                                            </div>
+                                        </div>
+                        
+                                        <div class="info-category">
+                                            <div class="info-icon">
+                                                <span class="info-star">
+                                                    <i class="fas fa-star info-eva-star"></i>
+                                                    <i class="fas fa-star info-eva-star"></i>            
+                                                </span>
+                                            </div>
+                        
+                                            <div class="info-icon">
+                                                <span class="info-trophy">
+                                                    <i class="fas fa-trophy info-eva-trophy"></i>
+                                                    <span class="info-trophy-word">x 0</span>
+                                                </span>
+                                            </div>
+                        
+                                            <div class="info-icon">
+                                                <span class="info-trophy">
+                                                    <i class="fas fa-trophy info-eva-trophy"></i>
+                                                    <span class="info-trophy-word">x 0</span>
+                                                </span>
+                                            </div>
+                                        </div>                                        
+                                    </div>
+                                </button>
+                            </li>
+                        
+                            <!-- burnley -->
+                            <li class="container__item">
+                                <button class="container__item-btn">
+                                    <div class="container__item-name">
+                                        <h3 class="item-name">Burnley</h3>
+                                    </div>
+                                    <div class="container__item-btn-img">
+                                        <img src="./assets/img/Burnley.png" alt="" class="item-btn-img">
+                                    </div>                     
+                                    <div class="container__item-btn-info">
+                                        <div class="info-category">
+                                            <div class="info-word">
+                                                <span class="info-word-eva info-word-eva-1">Evaluate: </span>
+                                            </div>
+                        
+                                            <div class="info-word">
+                                                <span class="info-word-eva info-word-eva-2">EPL trophy: </span>
+                                            </div>
+                        
+                                            <div class="info-word">
+                                                <span class="info-word-eva info-word-eva-3">FA cup: </span>
+                                            </div>
+                                        </div>
+                        
+                                        <div class="info-category">
+                                            <div class="info-icon">
+                                                <span class="info-star">
+                                                    <i class="fas fa-star info-eva-star"></i>
+                                                    <i class="fas fa-star info-eva-star"></i>
+                                                    <i class="fas fa-star info-eva-star"></i>
+                                                </span>
+                                            </div>
+                        
+                                            <div class="info-icon">
+                                                <span class="info-trophy">
+                                                    <i class="fas fa-trophy info-eva-trophy"></i>
+                                                    <span class="info-trophy-word">x 2</span>
+                                                </span>
+                                            </div>
+                        
+                                            <div class="info-icon">
+                                                <span class="info-trophy">
+                                                    <i class="fas fa-trophy info-eva-trophy"></i>
+                                                    <span class="info-trophy-word">x 1</span>
+                                                </span>
+                                            </div>
+                                        </div>                                        
+                                    </div>
+                                </button>
+                            </li>
+                        
+                            <!-- newcastle -->
+                            <li class="container__item">
+                                <button class="container__item-btn">
+                                    <div class="container__item-name">
+                                        <h3 class="item-name">Newcastle United</h3>
+                                    </div>
+                                    <div class="container__item-btn-img">
+                                        <img src="./assets/img/Newcastle.png" alt="" class="item-btn-img">
+                                    </div>                     
+                                    <div class="container__item-btn-info">
+                                        <div class="info-category">
+                                            <div class="info-word">
+                                                <span class="info-word-eva info-word-eva-1">Evaluate: </span>
+                                            </div>
+                        
+                                            <div class="info-word">
+                                                <span class="info-word-eva info-word-eva-2">EPL trophy: </span>
+                                            </div>
+                        
+                                            <div class="info-word">
+                                                <span class="info-word-eva info-word-eva-3">FA cup: </span>
+                                            </div>
+                                        </div>
+                        
+                                        <div class="info-category">
+                                            <div class="info-icon">
+                                                <span class="info-star">
+                                                    <i class="fas fa-star info-eva-star"></i>
+                                                    <i class="fas fa-star info-eva-star"></i>
+                                                    <i class="fas fa-star info-eva-star"></i>
+                                                    <i class="fas fa-star info-eva-star"></i>
+                                                </span>
+                                            </div>
+                        
+                                            <div class="info-icon">
+                                                <span class="info-trophy">
+                                                    <i class="fas fa-trophy info-eva-trophy"></i>
+                                                    <span class="info-trophy-word">x 4</span>
+                                                </span>
+                                            </div>
+                        
+                                            <div class="info-icon">
+                                                <span class="info-trophy">
+                                                    <i class="fas fa-trophy info-eva-trophy"></i>
+                                                    <span class="info-trophy-word">x 6</span>
+                                                </span>
+                                            </div>
+                                        </div>                                       
+                                    </div>
+                                </button>
+                            </li>
+                        
+                            <!-- norwich -->
+                            <li class="container__item">
+                                <button class="container__item-btn">
+                                    <div class="container__item-name">
+                                        <h3 class="item-name">Norwich City</h3>
+                                    </div>
+                                    <div class="container__item-btn-img">
+                                        <img src="./assets/img/Norwich_City.png" alt="" class="item-btn-img">
+                                    </div>                     
+                                    <div class="container__item-btn-info">
+                                        <div class="info-category">
+                                            <div class="info-word">
+                                                <span class="info-word-eva info-word-eva-1">Evaluate: </span>
+                                            </div>
+                        
+                                            <div class="info-word">
+                                                <span class="info-word-eva info-word-eva-2">EPL trophy: </span>
+                                            </div>
+                        
+                                            <div class="info-word">
+                                                <span class="info-word-eva info-word-eva-3">FA cup: </span>
+                                            </div>
+                                        </div>
+                        
+                                        <div class="info-category">
+                                            <div class="info-icon">
+                                                <span class="info-star">
+                                                    <i class="fas fa-star info-eva-star"></i>
+                                                    <i class="fas fa-star info-eva-star"></i> 
+                                                </span>
+                                            </div>
+                        
+                                            <div class="info-icon">
+                                                <span class="info-trophy">
+                                                    <i class="fas fa-trophy info-eva-trophy"></i>
+                                                    <span class="info-trophy-word">x 0</span>
+                                                </span>
+                                            </div>
+                        
+                                            <div class="info-icon">
+                                                <span class="info-trophy">
+                                                    <i class="fas fa-trophy info-eva-trophy"></i>
+                                                    <span class="info-trophy-word">x 0</span>
+                                                </span>
+                                            </div>
+                                        </div>                                        
+                                    </div>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>                                
+        </div>     
+        
+        <!-- footer -->
+        <footer class="footer">
+            
+        </footer>
+    </div>    
+</body>
+</html> 
